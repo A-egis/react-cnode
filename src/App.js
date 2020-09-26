@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import '@/index.css'
 import MainHeader from '@c/MainHeader'
 import MainFooter from '@c/MainFooter'
+import BackToTop from '@c/BackToTop'
 import { Layout, Row, Col } from 'antd'
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <MainFooter />
         </Col>
       </Row>
+      <BackToTop></BackToTop>
     </div>
   );
 }

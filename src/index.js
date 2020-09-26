@@ -9,15 +9,11 @@ import { Provider } from 'react-redux'
 import reducer from '@/redux/reducers/index'
 const store = createStore(reducer, applyMiddleware(thunk))
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>
-
-    </Router>
-
-  </React.StrictMode>,
+  <Router>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>,
   document.getElementById('root')
 );
 
