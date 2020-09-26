@@ -1,0 +1,176 @@
+/* 导航 */
+.panel .nav{
+    line-height: 20px;
+    border-bottom: none;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 3px 3px 0 0;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+}
+.panel .nav .nav-item{
+    list-style: none;
+}
+.panel .nav .nav-item a{
+    font-size: 14px;
+    margin: 0 10px;
+    color: #80bd01;
+}
+.panel .nav .nav-item .active-tab{
+    background-color: #80bd01;
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 3px;
+}
+.panel .nav .nav-item a:not(.active-tab):hover{
+    color: #005580;
+}
+/* 去掉border-bottom */
+.panel .nav.ant-menu-horizontal > .ant-menu-item{
+    border-bottom: none;
+}
+/* 去掉li hover时的border-bottom */
+.panel .nav.ant-menu-horizontal > .ant-menu-item:hover{
+    color: #005580;
+    border-bottom: none;
+}
+/* 修改a标签默认颜色 */
+.panel .nav.ant-menu-horizontal > .ant-menu-item a{
+    color: #80bd01;
+}
+/* 修改a标签hover时的颜色 */
+.panel .nav.ant-menu-horizontal > .ant-menu-item a:hover {
+    color: #005580;
+}
+/* 修改选中时a标签的样式 */
+.panel .nav.ant-menu-horizontal .ant-menu-item-selected a,
+.panel .nav.ant-menu-horizontal > .ant-menu-item-selected a:hover{
+    background-color: #80bd01;
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 3px;
+}
+
+/* 列表 */
+.panel .topic-list{
+    background-color: #fff;
+}
+.panel .topic-list .list-item{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.panel .topic-list .ant-list-item-meta-title{
+    margin-bottom: 0;
+}
+/* 标题 */
+.panel .topic-list .topic-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+/* 文章标题 */
+.panel .topic-list .topic-title a{
+    max-width: 70%;
+    white-space: nowrap;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+}
+.panel .topic-list .topic-title a:hover{
+    text-decoration: underline;
+}
+.panel .topic-list .topic-title a:visited{
+    color: #888;
+}
+/* 回复数 */
+.panel .topic-list .reply-count{
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #333;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+}
+.panel .topic-list .reply-count .count-of-replies {
+    color: #9e78c0;
+    margin-right: 2px;
+}
+.panel .topic-list .reply-count .count-of-visits {
+    font-size: 10px;
+    color: #b4b4b4;
+    margin-left: 2px;
+}
+/* 上次回复时间 */
+.panel .topic-list .last-reply{
+    position: absolute;
+    right: 10px;
+    min-width: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 11px;
+    margin-left: 20px;
+    color: #777;
+    text-align: right;
+}
+/* 分页 */
+.panel .pagination-container{
+    background-color: #fff;
+    padding: 10px;
+}
+.panel .pagination-container .ant-pagination-item{
+    margin-right: 0;
+}
+.panel .ant-pagination-prev, 
+.panel .ant-pagination-jump-prev, 
+.panel .ant-pagination-jump-next{
+    margin-right: 0;
+}
+.ant-pagination-item:not(.ant-pagination-item-active):hover{
+    border-color: #ddd !important;
+    background-color: #f5f5f5 !important;
+}
+.ant-pagination-item:hover a{
+    color: #778087 !important;
+}
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon, 
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon{
+    color: #80bd01 !important;
+}
+.ant-pagination-prev:hover .ant-pagination-item-link, 
+.ant-pagination-next:hover .ant-pagination-item-link{
+    color: #80bd01 !important;
+    background-color: #f5f5f5 !important;
+    border-color: #ddd !important;
+}
+.ant-pagination-item-active a{
+    color: #80bd01 !important;
+}
+.ant-pagination-item-active{
+    border-color: #ddd !important;
+}
+@media all and (max-width: 767px) {
+    .panel{
+        margin: 0 5px;
+    }   
+    .panel .topic-list .reply-count{
+        position: absolute;
+        bottom: 0;
+        left: 89px;
+        text-align: left;
+        font-size: 10px;
+    }
+    .panel .topic-list .reply-count .count-of-replies {
+        font-size: 10px;
+    }
+}

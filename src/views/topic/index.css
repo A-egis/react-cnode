@@ -1,0 +1,92 @@
+.panel .topic-card .ant-card-body{
+  padding: 0;
+}
+.panel .topic-header {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-size: 14px;
+}
+.panel .topic-header .title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 75%;
+  line-height: 130%;
+}
+.panel .topic-header .changes {
+  font-size: 12px;
+  color: #838383;
+}
+.panel .topic-header .changes span::before {
+  content: "●";
+  padding: 0 5px;
+}
+.panel .topic-content {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+.panel .reply-list {
+}
+.panel .reply-list .list-item {
+  padding: 10px;
+  background: #fff;
+  justify-content: start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.panel .reply-list .list-item .author-content,
+.panel .reply-list .list-item .reply-content {
+  width: 100%;
+}
+.panel .reply-list .list-item .author-content {
+  display: flex;
+}
+.panel .reply-list .list-item .author-content .user-avatar {
+  position: absolute;
+}
+.panel .reply-list .list-item .author-content .user-info {
+  margin-left: 42px;
+}
+.panel .reply-list .list-item .author-content .user-info .reply-author {
+  color: #666;
+  font-size: 12px;
+  font-weight: 700;
+}
+.panel .reply-list .list-item .author-content .user-info .reply-time {
+  font-size: 11px;
+  color: #08c;
+  padding-left: 5px;
+}
+.panel .reply-list .list-item .author-content .user-info .reply-by-author {
+  padding-left: 5px;
+  color: #fff;
+  background-color: #6ba44e;
+  padding: 2px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.panel .reply-list .list-item .author-content .user-action {
+  position: absolute;
+  right: 10px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.panel .reply-list .list-item .author-content .user-action .thumb {
+  background-image: url("./thumb.png");
+  background-size: 14px 14px;
+  padding: 9px;
+  background-repeat: no-repeat;
+  background-position: 0px 12px;
+}
+.panel .reply-list .list-item .reply-content {
+  padding-left: 50px;
+  color: #333;
+}
+.panel .reply-list .list-item .reply-content .markdown-text {
+  padding: 0;
+}

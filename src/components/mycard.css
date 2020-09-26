@@ -1,0 +1,14 @@
+.card-container{
+  margin-bottom: 13px;
+}
+.card-title {
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 3px 3px 0 0;
+  font-size: 14px;
+}
+.card-content {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
+}

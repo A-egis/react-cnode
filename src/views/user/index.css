@@ -1,0 +1,11 @@
+.panel .card-content .user-info{
+  padding: 10px;
+}
+.panel .card-content .user-info .user-name{
+  margin-left: 10px;
+  color: #778087;
+  font-weight: 500;
+}
+.panel .card-content .user-info  .create-time{
+  color: #ababab;
+}

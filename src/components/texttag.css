@@ -1,0 +1,17 @@
+/* 标签 */
+.green-tag,
+.gray-tag {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+.green-tag {
+  background-color: #80bd01;
+  color: #fff;
+}
+.gray-tag {
+  background-color: #e5e5e5;
+  color: #999;
+}

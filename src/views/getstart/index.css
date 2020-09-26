@@ -1,0 +1,82 @@
+@media all and (max-width: 767px) {
+  .panel {
+    margin: 0 5px;
+  }
+}
+
+.panel .title .bread-crumb {
+  line-height: 20px;
+}
+.bread-crumb a.active {
+  color: #80bd01;
+}
+.bread-crumb a.active:hover {
+  color: #80bd01;
+  text-decoration: underline;
+}
+.bread-crumb .crumb-item {
+  color: #999;
+}
+
+.markdown-text {
+  margin: 0 10px;
+  padding: 10px;
+}
+.markdown-text h2,
+.markdown-text h3 {
+  margin: 30px 0 15px;
+  font-size: 26px;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+}
+.markdown-text h2:first-child,
+.markdown-text h3:first-child {
+  margin-top: 0;
+}
+
+.markdown-text p {
+  font-size: 15px;
+  line-height: 1.7em;
+  overflow: auto;
+}
+.markdown-text ol,
+.markdown-text ul {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+.markdown-text ul li {
+  line-height: 2em;
+}
+.markdown-text img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.markdown-text pre.prettyprint {
+  font-size: 14px;
+  border-radius: 0;
+  padding: 0 15px;
+  border: none;
+  margin: 20px -10px;
+  border-width: 1px 0;
+  background: #f7f7f7;
+  tab-size: 4;
+}
+.markdown-text strong {
+  font-weight: 700;
+}
+.markdown-text a {
+  color: #08c;
+  font-size: 15px;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+.markdown-text a:hover {
+  color: #08c;
+  text-decoration: underline;
+}
+.markdown-text .about-friend-links img {
+  width: 250px;
+  height: 60px;
+}

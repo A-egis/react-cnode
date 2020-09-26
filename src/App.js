@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import RouterIndex from '@/router/index'
+import 'antd/dist/antd.css';
+import '@/index.css'
+import MainHeader from '@c/MainHeader'
+import MainFooter from '@c/MainFooter'
+import { Layout, Row, Col } from 'antd'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainHeader />
+      <Row className="main-container">
+        <Col className="main-content" md={22} xs={24}>
+          <Layout.Content>
+            <RouterIndex />
+          </Layout.Content>
+        </Col>
+      </Row>
+      <Row className="footer-container">
+        <Col md={22} xs={0}>
+          <MainFooter />
+        </Col>
+      </Row>
     </div>
   );
 }
