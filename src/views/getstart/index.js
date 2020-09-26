@@ -16,7 +16,7 @@ class GetStart extends React.Component {
                         <Breadcrumb.Item className="crumb-item">Node.js 新手入门</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
-                <div key="content" class="markdown-text">
+                <div key="content" className="markdown-text">
                     <h2>Node.js 入门</h2>
                     <p>《<strong>快速搭建 Node.js 开发环境以及加速 npm</strong>》</p>
                     <p><a rel="nofollow noopener noreferrer" href="http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html" target="_blank">http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html</a></p>

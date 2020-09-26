@@ -25,8 +25,8 @@ class Index extends React.Component {
     componentDidMount() {
         this.getListData()
     }
-    componentWillReceiveProps(nextProps) {
-        if (this.props.match.params.type !== nextProps.match.params.type) {
+    componentDidUpdate(prevProps)  {
+        if (this.props.match.params.type !== prevProps.match.params.type) {
             this.setState({
                 page: 1
             }, () => {
@@ -76,7 +76,7 @@ class Index extends React.Component {
                     <NavLink to={item.path} exact activeClassName="active-tab">{item.name}</NavLink>
                 </li>)}
             </ul>
-            <TopicList loading={loading} data={data}></TopicList>
+            <TopicList tab={this.props.match.params.type} loading={loading} data={data}></TopicList>
             <Pagination className="pagination-container" defaultCurrent={this.state.page} current={this.state.page} pageSize={40} showSizeChanger={false} onChange={(page) => this.onChange(page)} total={1000} />
         </div>
     }

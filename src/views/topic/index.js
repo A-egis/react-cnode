@@ -44,7 +44,7 @@ class Topic extends React.Component {
                         <span>发布于 {format(data.create_at, "zh_CN")}</span>
                         <span>作者 {data.author.loginname}</span>
                         <span>{data.visit_count} 次浏览</span>
-                        <span>最后一次编辑是 {format(data.last_reply_at, "zh_CN")}</span>
+                        <span>最后一次回复是 {format(data.last_reply_at, "zh_CN")}</span>
                         <span>来自 {data.tab === "share" ? "分享" : "问答"}</span>
                     </div>
                 </div>

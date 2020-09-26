@@ -5,7 +5,7 @@ import { format } from 'timeago.js'
 import TextTag from '@c/TextTag'
 class TopicList extends React.Component {
     render() {
-        let { loading, data } = this.props
+        let { loading, data, tab } = this.props
         return <div className="topic-list">
             <List loading={loading} dataSource={data}
                 renderItem={item => (
@@ -21,7 +21,7 @@ class TopicList extends React.Component {
                         </span>}
 
                         <div className="topic-title">
-                            {item.top !== undefined && <TextTag item={item} />}
+                            {item.top !== undefined && <TextTag tab={tab} item={item} ></TextTag>}
                             <Link to={`/topic/${item.id}`}>{item.title}</Link>
                         </div>
                         <span className="last-reply">{format(item.last_reply_at, "zh_CN")}</span>
