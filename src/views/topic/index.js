@@ -7,8 +7,6 @@ import { format } from 'timeago.js'
 import ReplyList from '@v/topic/ReplyList'
 import { Card } from 'antd'
 import '@v/topic/index.css'
-// import './prettify'
-// import './prettify.css'
 class Topic extends React.Component {
     componentDidMount() {
         this.getListData()
@@ -21,7 +19,6 @@ class Topic extends React.Component {
             let id = this.props.match.params.id
             axios.get(`https://cnodejs.org/api/v1/topic/${id}`)
                 .then(res => {
-                    console.log(res);
                     dispatch({
                         type: "TOPICDETAIL_UPDATE_SUCC",
                         data: res.data

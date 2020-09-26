@@ -1,21 +1,21 @@
-function user(state={
+function user(state = {
     loading: true,
     data: {
-        data:{
-            loginname:"",
+        data: {
             avatar_url: "",
-            score:0,
-            create_at:"",
-            recent_topics:[],
-            recent_replies:[]
+            create_at: "",
+            loginname: "",
+            recent_replies: [],
+            recent_topics: [],
+            score: 0
         }
     }
-},action) {
-    switch(action.type){
+}, action) {
+    switch (action.type) {
         case "USER_UPDATE":
             return {
                 loading: true,
-                data:state.data
+                data: state.data
             };
         case "USER_SUCC":
             return {
@@ -26,13 +26,13 @@ function user(state={
             return {
                 loading: false,
                 data: {
-                    data:{
-                        loginname:"",
+                    data: {
                         avatar_url: "",
-                        score:0,
-                        create_at:"",
-                        recent_topics:[],
-                        recent_replies:[]
+                        create_at: "",
+                        loginname: "",
+                        recent_replies: [],
+                        recent_topics: [],
+                        score: 0
                     }
                 }
             }

@@ -19,7 +19,6 @@ class User extends React.Component {
             });
             axios.get(`https://cnodejs.org/api/v1/user/${loginname}`)
                 .then(function (res) {
-                    console.log(res);
                     dispatch({
                         type: "USER_SUCC",
                         data: res
@@ -35,7 +34,6 @@ class User extends React.Component {
     }
     render() {
         let { loading, data } = this.props
-        console.log(this.props);
         return <div className="panel">
             <MyCard>
                 <div key="title" className="title">
