@@ -25,7 +25,7 @@ class Index extends React.Component {
     componentDidMount() {
         this.getListData()
     }
-    componentDidUpdate(prevProps)  {
+    componentDidUpdate(prevProps) {
         if (this.props.match.params.type !== prevProps.match.params.type) {
             this.setState({
                 page: 1
@@ -65,6 +65,7 @@ class Index extends React.Component {
             page: page
         }, () => {
             this.getListData()
+            window.scrollTo(0, 0)
         })
 
     }
